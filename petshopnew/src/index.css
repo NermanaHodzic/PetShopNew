@@ -1,0 +1,231 @@
+#logo {
+  max-height: 100px;
+  width: 130px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#paw{
+  display: flex;
+  align-items: center;
+}
+*{
+  margin: 0;
+ 
+}
+#searchbar,
+#cart {
+  max-height: 30px;
+  max-width: 30px;
+}
+
+#velikidiv {
+  display: flex;
+  justify-content: center; /* Centrirajte kartice */
+  flex-wrap: wrap; /* Omogućite prelazak na više redova ako je potrebno */
+  
+}
+
+.card {
+  height: 440px;
+  width: 240px; /* Dodajte širinu kartice */
+  border: 1px solid rgb(212, 191, 191);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(198, 156, 183);
+  background-color: blanchedalmond;
+  margin: 10px;
+  text-align: center;
+  flex: 1;
+  display: inline-block;
+}
+
+.card .card-image {
+  width: 250px;
+  height: 280px;
+}
+.otvori{
+  width: 120px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: rgb(235, 212, 170);
+  border: 1px solid bisque;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #515151;
+  box-shadow:2px 2px 2px#f9f9f9;
+}
+.otvori:hover{
+background-color: #ecd6cc;
+}
+.card .naslov {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+  margin-bottom: 20px;
+  color: #3f3b3b;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Poravnanje logoa, menija i korpe */
+  align-items: center; /* Centralizacija sadržaja */
+  padding: 16px;
+  max-height: 70px;
+  box-shadow: 0 1px 3px -2px black;
+  background-color: #242424; /* Promjena pozadinske boje navbar-a */
+}
+
+.nav-logo p {
+  color: #7a7a7a; /* Promjena boje teksta logoa */
+  font-size: 38px;
+  font-weight: 600; /* Ispravka vrijednosti font-weight */
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 50px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.nav-menu li {
+  cursor: pointer;
+}
+
+.nav-login-cart {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.nav-login-cart button {
+  width: 157px;
+  height: 58px;
+  outline: none;
+  border: 1px solid #7a7a7a;
+  border-radius: 75px;
+  color: #515151;
+  font-size: 20px;
+  font-weight: 500;
+  background: white;
+  cursor: pointer;
+}
+
+.nav-login-cart button:active {
+  background: #f3f3f3;
+}
+.nav-cart-count{
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -35px;
+  margin-left: -55px;
+  border-radius: 11px;
+  font-size: 14px;
+  background: red;
+  color: white;
+}
+.nav-menu hr{
+  border: none;
+  width: 80%;
+  height: 3px;
+  border-radius: 10px;
+  background: rgb(221, 170, 99);
+}
+
+@media (prefers-color-scheme: light) {
+  .navbar {
+    background-color: #ffffff; /* Promjena boje pozadine navbar-a u svijetlom načinu rada */
+  }
+
+  .nav-logo p {
+    color: #1a1a1a; /* Promjena boje teksta logoa u svijetlom načinu rada */
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:50px;
+}
+.footer-logo{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer-logo p{
+  color: #383838;
+  font-size: 46px;
+  font-weight: 700;
+}
+
+.footer-links{
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  color:#252525;
+  font-size: 20px;
+}
+.footer-links li{
+  cursor: pointer;
+}
+.footprints{
+  display: flex;
+  gap: 60px;
+  width: 50px;
+}
+.footer-container{
+  padding:10px;
+  padding-bottom: 6px;
+  background: #fbfbfb;
+  border: 1px solid #ebebeb;
+}
+.footer-copyright{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:30px;
+  width: 100%;
+  margin-bottom: 30px;
+  color: #1a1a1a;
+  font-size: 20px;
+}
+.footer-copyright hr{
+  width: 80%;
+  border: none;
+  border-radius: 10px;
+  height: 3px;
+  background: #c7c7c7;
+}
+/* StarRating.css */
+.star-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.star-rating button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.star-rating .on {
+  color: gold;
+}
+
+.star-rating .off {
+  color: grey;
+}

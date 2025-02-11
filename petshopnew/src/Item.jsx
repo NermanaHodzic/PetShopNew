@@ -1,0 +1,18 @@
+import React from 'react'
+import './Item.css'
+import {Link} from 'react-router-dom'
+
+export const Item = (props) => {
+  return (
+    <div className='item'>
+        <Link to={`/product/${props.ProizvodId}`}><img src={props.image} alt=""/></Link>
+        <p>{props.NazivProizvoda}</p>
+        <div className='item-prices'>
+            <div className='item-price-new'>
+                {props.Cijena} KM
+            </div>
+        </div>
+    </div>
+  )
+}
+export default Item
